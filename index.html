@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/fe432e0e53.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fe432e0e53.js"></script>
     <title>Approval Template Dashboard</title>
 </head>
 <body>
@@ -41,13 +41,109 @@
          <li><a href="#">Delivery Notes Approval</a></li>
          <li><a href="#">Once Off Delivery Address</a></li>
          <li><a href="#">Incorrect Invoiced Price</a></li>
+         <li><a href="#">VD Approval</a></li>
+         <li><a href="#">Track Quote</a></li>
       </ul>
    </nav>
 
    <div class="main">
       <div class="header">
          Dashboard
-      </div> 
+      </div>
+      <div class="wrapper">
+
+         <div class="content-acc">
+            
+            <div class="acc-num">
+               <span class="text">Account Number:</span>
+               <input type="text" id="acc_number" placeholder="Enter The Account Details">
+            </div>
+            
+            <div class="rep-cd">
+               <span class="text">Rep Code:</span>
+               <input type="text" id="rep_code" placeholder="Enter The Rep Code">
+            </div>
+
+            <div class="acc-nme">
+               <span class="text">Account Name</span>
+               <input type="text" id="rep_code" placeholder="Enter The Account Name">
+            </div>
+
+            <div class="branch-cd">
+               <span class="text">Rep Code:</span>
+               <input type="text" id="rep_code" placeholder="Enter The rep code">
+            </div>
+            
+
+         </div>
+
+         <div class="content-item">
+            
+            <div class="acc-num">
+               <span class="text">Item Code:</span>
+               <input type="text" id="item-code" placeholder="Enter The Item Code">
+            </div>
+            
+            <div class="rep-cd">
+               <span class="text">Item Description:</span>
+               <input type="text" id="item-description" placeholder="Enter The Item Description">
+            </div>
+
+            <div class="acc-nme">
+               <span class="text">Quantity:</span>
+               <input type="text" id="item-qty" placeholder="Enter The Item Quantity">
+            </div>
+   
+         </div>
+
+         <div class="content-system">
+            
+            <div class="system-price">
+               <span class="text">System Price:</span>
+               <input type="text" id="sys-price" placeholder="Enter The System Price">
+            </div>
+            
+            <div class="new-price">
+               <span class="text">New Price:</span>
+               <input type="text" id="new-price" placeholder="Enter The New Price">
+            </div>
+
+            <div class="system-gp">
+               <span class="text">System GP%:</span>
+               <input type="text" id="isys-gp" placeholder="Enter The System GP%">
+            </div>
+
+            <div class="new-gp">
+               <span class="text">New GP%:</span>
+               <input type="text" id="new-gp" placeholder="Enter The New GP%">
+            </div>
+   
+         </div>
+
+         <div class="content-who">
+            <div class="rep-customer">
+               <span class="text">Rep/Customer:</span>
+               <select name="rep/customer" id="rep-cust">
+                  <option value="blank"></option>
+                  <option value="rep">Rep</option>
+                  <option value="customer">Customer</option>
+               </select>
+            </div>
+
+            <div class="content-button-submit">
+               <div class="buttons">
+                  <input type="button" id="submit-button" value="Submit">
+               </div>
+            </div>
+
+            <div class="content-button-cancel">
+               <div class="buttons">
+                  <input type="button" id="cancel-button" value="Cancel">
+               </div>
+            </div>
+
+         </div>
+      </div>
    </div>
    <script src="core.js"></script>
 </body>

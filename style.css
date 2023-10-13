@@ -6,6 +6,13 @@
     user-select: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
+    /* ATT Colors */
+    --side-bar-color: #323b6c;
+    --text-color: #ffffff;
+    --active-text-color: #00ffff;
+    --selected-bg: #5b6467;
+    --hidden-color: #d1291c;
 }
 
 .sidebar{
@@ -15,7 +22,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: var(--side-bar-color);
     overflow-x: hidden;
     padding-top: 0;
 }
@@ -24,12 +31,12 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 15px;
-    color: #818181;
+    color: var(--text-color);
     display: block;
 }
 
 .sidebar a:hover{
-    color: #f1f1f1;
+    color: var(--active-text-color);
 }
 
 .sidebar .text{
@@ -38,7 +45,7 @@
     font-weight: 600;
     line-height: 65px;
     text-align: center;
-    background: #1e1e1e;
+    background: var(--side-bar-color);
     letter-spacing: 1px;
 }
 
@@ -53,7 +60,7 @@ nav ul li:last-child{
 
 nav ul li a{
     position: relative;
-    color: white;
+    color: var(--hidden-color);
     text-decoration: none;
     font-size: 15px;
     padding-left: 40px;
@@ -64,13 +71,13 @@ nav ul li a{
 }
 
 nav ul li.active a{
-    color: cyan;
-    background: #1e1e1e;
-    border-left-color: cyan;
+    color: var(--active-text-color);
+    background: var(--selected-bg);
+    border-left-color: var(--hidden-color);
 }
 
 nav ul li a:hover{
-    background: #1e1e1e;
+    background: var(--selected-bg);
 }
 
 nav ul ul{
@@ -93,22 +100,23 @@ nav ul ul li{
 
 nav ul ul li a{
     font-size: 10px;
-    color: #e6e6e6;
+    color: var(--text-color);
     padding-left: 80px;
 }
 
 nav ul li.active ul li a{
-    color: #e6e6e6;
-    background: #1b1b1b;
+    color: var(--text-color);
+    background: var(--side-bar-color);
     border-left-color: transparent;
 }
 
 nav ul ul li a:hover{
-    color: cyan!important;
-    background: #1e1e1e!important;
+    color: var(--text-color)!important;
+    background: var(--selected-bg)!important;
 }
 
 nav ul li a span{
+    color: var(--hidden-color);
     position: absolute;
     top: 50%;
     right: 20px;
@@ -123,13 +131,71 @@ nav ul li a span.rotate{
 
 .main {
     margin-left: 250px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 0px;
 }
 
 .main .header{
-    background-color: aqua;
+    background-color: var(--side-bar-color);
+    color: var(--text-color);
+    font-size: 28px; /* Increased text to enable scrolling */
 }
+
+.wrapper{
+    display: inline-flex;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    max-width: 100%;
+}
+
+.content-acc{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px 10px;
+    max-width: 300px;
+}
+
+.content-item{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px 10px;
+    max-width: 300px;
+}
+
+.content-system{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px 10px;
+    max-width: 300px;
+}
+
+.content-who{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px 10px;
+    max-width: 150px;
+    max-height: 75px;
+}
+
+.content-who .content-button-submit input{
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: -10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.content-who .content-button-cancel input{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: -10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.content-acc, .content-item, .content-system, .content-who span{
+    font-size: 15px;
+}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
