@@ -144,7 +144,7 @@ nav ul li a span.rotate{
     display: inline-flex;
     margin-top: 10px;
     border: 1px solid black;
-    width: calc(100% / 6);
+    width: calc(100% - 1rem);
 }
 
 .content-acc{
