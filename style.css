@@ -132,72 +132,84 @@ nav ul li a span.rotate{
 .main {
     margin-left: 250px; /* Same as the width of the sidenav */
     padding: 0px 0px;
+    
 }
 
 .main .header{
     background-color: var(--side-bar-color);
     color: var(--text-color);
+    z-index: -1;
+    overflow: hidden;
     font-size: 28px; /* Increased text to enable scrolling */
 }
 
 .wrapper{
-    display: inline-flex;
-    margin-top: 10px;
-    border: 1px solid black;
-    width: calc(100% - 1rem);
+    border: 1px solid red;
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 10px;
+    align-content: sta;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.wrapper span{
+    border: 1px solid rgb(255, 0, 0);
+    display: inline-block;
+    margin-top:  5px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .content-acc{
     border: 1px solid black;
-    margin: 10px;
-    padding: 10px 10px;
-    width: calc(100% - 1rem);
+}
+
+.wrapper input{
+    margin-top: 5px;
+    width: 100%;
 }
 
 .content-item{
     border: 1px solid black;
-    margin: 10px;
-    padding: 10px 10px;
-    width: calc(100% - 1rem);
 }
 
 .content-system{
     border: 1px solid black;
-    margin: 10px;
-    padding: 10px 10px;
-    width: calc(100% - 1rem);
 }
 
 .content-who{
     border: 1px solid black;
-    margin: 10px;
-    padding: 10px 10px;
-    width: calc(100% - 1rem);
-    max-height: 75px;
 }
 
-.content-who .content-button-submit input{
+.rep-customer{
     border: 1px solid black;
-    margin-top: 20px;
-    margin-left: -10px;
-    width: 150px;
-    cursor: pointer;
 }
 
-.content-who .content-button-cancel input{
+.rep-customer select{
+    border: 1px solid #d1291c;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content-button{
     border: 1px solid black;
-    margin-top: 10px;
-    margin-left: -10px;
-    width: 150px;
-    cursor: pointer;
+    text-align: center;
 }
 
-.content-acc, .content-item, .content-system, .content-who span{
-    font-size: 15px;
+.content-button input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
 }
-
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+    .sidenav, .main .header{padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .wrapper {padding-top: 15px;}
+    .wrapper span,input,select {font-size: 18px;}
 }
