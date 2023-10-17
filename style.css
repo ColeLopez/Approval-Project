@@ -148,10 +148,10 @@ nav ul li a span.rotate{
     position: fixed;
     display: grid;
     grid-template-columns: 25% 25% 25% 13%;
-    gap: 40px;
-    align-content: start;
+    gap: 10px;
     padding: 10px 10px 10px 10px;
     width: 90%;
+    text-align: center;
 }
 
 .wrapper span{
@@ -162,6 +162,7 @@ nav ul li a span.rotate{
     font-size: 15px;
     font-weight: bold;
     font-style: italic;
+    /* text-align: center; */
 }
 
 .content-acc{
@@ -171,6 +172,7 @@ nav ul li a span.rotate{
 .wrapper input{
     margin-top: 5px;
     width: 100%;
+    text-align: center;
 }
 
 .content-item{
