@@ -147,11 +147,11 @@ nav ul li a span.rotate{
     border: 1px solid red;
     position: fixed;
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    gap: 10px;
-    align-content: sta;
+    grid-template-columns: 25% 25% 25% 13%;
+    gap: 40px;
+    align-content: start;
     padding: 10px 10px 10px 10px;
-    
+    justify-content: center;
 }
 
 .wrapper span{
