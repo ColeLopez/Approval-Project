@@ -148,7 +148,7 @@ nav ul li a span.rotate{
     position: fixed;
     display: grid;
     grid-template-columns: 25% 25% 25% 13%;
-    gap: 20px;
+    gap: 30px;
     padding: 10px 10px 10px 10px;
     width: 90%;
     text-align: center;
