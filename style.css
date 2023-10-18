@@ -144,7 +144,7 @@ nav ul li a span.rotate{
 }
 
 .wrapper{
-    border: 1px solid red;
+    border: 2px solid var(--hidden-color);
     position: fixed;
     display: grid;
     grid-template-columns: 25% 25% 25% 13%;
@@ -152,53 +152,57 @@ nav ul li a span.rotate{
     padding: 10px 10px 10px 10px;
     width: 90%;
     text-align: center;
+    margin: 10px;
 }
 
 .wrapper span{
-    border: 1px solid rgb(180, 0, 0);
+    /* border: 1px solid rgb(180, 0, 0); */
     display: inline-block;
     margin-top:  5px;
     width: 100%;
     font-size: 15px;
     font-weight: bold;
+    text-decoration: underline;
     font-style: italic;
     /* text-align: center; */
 }
 
 .content-acc{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .wrapper input{
     margin-top: 5px;
     width: 100%;
+    height: 35px;
     text-align: center;
 }
 
 .content-item{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .content-system{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .content-who{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .rep-customer{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .rep-customer select{
-    border: 1px solid #d1291c;
+    /* border: 1px solid #d1291c; */
+    height: 35px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .content-button{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     text-align: center;
 }
