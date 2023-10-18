@@ -146,13 +146,13 @@ nav ul li a span.rotate{
 .wrapper{
     border: 2px solid var(--hidden-color);
     position: fixed;
+    margin: 10px;
     display: grid;
     grid-template-columns: 25% 25% 25% 13%;
     gap: 30px;
     padding: 10px 10px 10px 10px;
-    width: 90%;
+    width: 85%;
     text-align: center;
-    margin: 10px;
 }
 
 .wrapper span{
